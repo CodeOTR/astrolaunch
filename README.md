@@ -1,3 +1,5 @@
+![AstroLaunch](https://github.com/CodeOTR/astrolaunch/raw/main/public/AstroLaunch.png)
+
 # AstroLaunch
 
 ```sh
