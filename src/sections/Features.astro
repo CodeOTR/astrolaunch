@@ -1,4 +1,6 @@
 ---
+import FeatureTile from "./FeatureTile.astro";
+
 // src/components/Features.astro
 ---
 
@@ -15,92 +17,67 @@
       voluptatum cupiditate veritatis in accusamus quisquam.
     </p>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <div class="dark:bg-gray-800 shadow p-6 rounded-lg">
-        <div class="text-blue-500 mb-4">
-          <svg
-            class="w-12 h-12 mx-auto"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-            aria-hidden="true"
-            ><path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M12 8v4l3 3m-3-7a4 4 0 100 8 4 4 0 000-8z"
-            ></path></svg
-          >
-        </div>
-        <h3 class="text-xl font-semibold mb-2">Server monitoring</h3>
-        <p class="text-gray-400 mb-4">
-          Non quo aperiam repellendus quas est est. Eos aut dolore aut ut sit
-          nesciunt. Ex tempora quia. Sit nobis consequatur dolores incidunt.
-        </p>
-        <a
-          href="#"
-          class="text-blue-500 hover:text-blue-400"
-          >Learn more &rarr;</a
-        >
-      </div>
-      <div class="dark:bg-gray-800 shadow p-6 rounded-lg">
-        <div class="text-blue-500 mb-4">
-          <svg
-            class="w-12 h-12 mx-auto"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-            aria-hidden="true"
-            ><path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M12 20l-4-4h8l-4 4zm0-16l4 4H8l4-4z"
-            ></path></svg
-          >
-        </div>
-        <h3 class="text-xl font-semibold mb-2">Collaborate</h3>
-        <p class="text-gray-400 mb-4">
-          Vero eum voluptatem aliquid nostrum voluptatem. Vitae esse natus.
-          Earum nihil deserunt eos quasi cupiditate. A inventore et molestiae
-          natus.
-        </p>
-        <a
-          href="#"
-          class="text-blue-500 hover:text-blue-400"
-          >Learn more &rarr;</a
-        >
-      </div>
-      <div class="dark:bg-gray-800 shadow p-6 rounded-lg">
-        <div class="text-blue-500 mb-4">
-          <svg
-            class="w-12 h-12 mx-auto"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-            aria-hidden="true"
-            ><path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M8 7v6h6"
-            ></path></svg
-          >
-        </div>
-        <h3 class="text-xl font-semibold mb-2">Task scheduling</h3>
-        <p class="text-gray-400 mb-4">
-          Et quod quaerat dolorem quaerat architecto aliquam accusantium. Ex
-          adipisci et doloremque autem quia quam. Quis eos molestiae at iure
-          impedit.
-        </p>
-        <a
-          href="#"
-          class="text-blue-500 hover:text-blue-400"
-          >Learn more &rarr;</a
-        >
-      </div>
+      <FeatureTile
+        title="Automate"
+        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus magnam voluptatum cupiditate veritatis in accusamus quisquam."
+        ><svg
+          slot="icon"
+          class="w-12 h-12 mx-auto"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+          ><path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M12 8v4l3 3m-3-7a4 4 0 100 8 4 4 0 000-8z"
+          ></path></svg
+        ></FeatureTile
+      >
+      <FeatureTile
+        title="Deploy"
+        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus magnam voluptatum cupiditate veritatis in accusamus quisquam."
+        ><svg
+          slot="icon"
+          class="w-12 h-12 mx-auto"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+          ><path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M5 13l4 4L19 7"
+          ></path></svg
+        ></FeatureTile
+      >
+      <FeatureTile
+        title="Monitor"
+        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus magnam voluptatum cupiditate veritatis in accusamus quisquam."
+        ><svg
+          slot="icon"
+          class="w-12 h-12 mx-auto"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+          ><path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M12 5v.01M12 12v.01M12 19v.01"
+          ></path><path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M5 12h.01M12 5l7 7-7 7-7-7z"
+          ></path></svg
+        ></FeatureTile
+      >
     </div>
   </div>
 </section>
