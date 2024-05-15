@@ -1,0 +1,46 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Contact from "../sections/Contact.astro";
+import Features from "../sections/Features.astro";
+import HeroSimple from "../sections/HeroSimple.astro";
+import ImageCta from "../sections/ImageCta.astro";
+import Pricing from "../sections/Pricing.astro";
+import Stats from "../sections/Stats.astro";
+import { ViewTransitions } from 'astro:transitions';
+
+---
+
+<html lang="en">
+  <head>
+	<ViewTransitions />
+	<link rel="sitemap" href="/sitemap-index.xml" />
+    <meta charset="utf-8" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/favicon.svg"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width"
+    />
+    <meta
+      name="generator"
+      content={Astro.generator}
+    />
+    <title>AstroLaunch</title>
+  </head>
+  <body>
+    <Layout>
+      <HeroSimple
+        title={"AstroLaunch"}
+        subtitle={"Launch fast with Astro. Highlight your product's key features and think less about the implementation."}
+      />
+	  <Features />
+	  <ImageCta />
+	  <Stats />
+	  <Pricing />
+	  <Contact />
+    </Layout>
+  </body>
+</html>

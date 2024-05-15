@@ -1,0 +1,84 @@
+---
+
+---
+
+<section
+  id="contact"
+  class="dark:bg-gray-900 dark:text-gray-400 py-24"
+>
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center dark:text-white mb-12">Contact Us</h2>
+    <div class="max-w-2xl mx-auto dark:bg-gray-800 p-8 rounded-lg shadow-lg">
+      <form
+        action="https://formspree.io/f/{your_form_id}"
+        method="POST"
+        class="space-y-6"
+      >
+        <div>
+          <label
+            for="name"
+            class="block text-sm font-medium text-gray-400"
+            >Name</label
+          >
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            class="mt-1 block w-full px-3 py-2 dark:bg-gray-700 dark:text-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+          />
+        </div>
+        <div>
+          <label
+            for="email"
+            class="block text-sm font-medium text-gray-400"
+            >Email</label
+          >
+          <input
+            type="email"
+            id="email"
+            name="_replyto"
+            required
+            class="mt-1 block w-full px-3 py-2 dark:bg-gray-700 dark:text-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+          />
+        </div>
+        <div>
+          <label
+            for="subject"
+            class="block text-sm font-medium text-gray-400"
+            >Subject</label
+          >
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            required
+            class="mt-1 block w-full px-3 py-2 dark:bg-gray-700 dark:text-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+          />
+        </div>
+        <div>
+          <label
+            for="message"
+            class="block text-sm font-medium text-gray-400"
+            >Message</label
+          >
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            required
+            class="mt-1 block w-full px-3 py-2 dark:bg-gray-700 dark:text-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+          ></textarea>
+        </div>
+        <div>
+          <button
+            type="submit"
+            class="w-full py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+          >
+            Send Message
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,43 @@
+---
+import BasicText from "../components/BasicText.astro";
+import LargeTitle from "../components/LargeTitle.astro";
+import TextButton from "../components/TextButton.astro";
+import ConstrainedWidth from "../layouts/ConstrainedWidth.astro";
+
+interface Props {
+  title: string;
+  subtitle: string;
+}
+
+const { title, subtitle } = Astro.props;
+---
+
+<ConstrainedWidth>
+  <div class="flex flex-col items-center py-44 ">
+    <div class="max-w-screen-md flex flex-col items-center px-12 md:px-0">
+      <div
+        class="mb-8 border border-neutral-300 dark:border-neutral-600 rounded-lg md:rounded-full py-1 px-2 text-neutral-600 dark:text-neutral-300 font-light tracking-wide flex flex-col md:flex-row justify-center items-center"
+      >
+        <span>Announcing our newest release. </span>
+        <a href="/"
+          ><span class="text-blue-600 font-medium">Read more &rarr;</span></a
+        >
+      </div>
+      <LargeTitle title={title} />
+      <BasicText content={subtitle} />
+    </div>
+    <div class="flex flex-row mt-12 gap-4">
+      <a href="/">
+        <button
+          class="bg-blue-600 text-white rounded-lg py-2 px-3 text-lg hover:brightness-110"
+        >
+          Get started
+        </button>
+      </a>
+      <TextButton
+        route="#features"
+        title="Learn More →"
+      />
+    </div>
+  </div>
+</ConstrainedWidth>

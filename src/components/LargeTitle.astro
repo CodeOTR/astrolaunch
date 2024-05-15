@@ -1,0 +1,14 @@
+---
+interface Props {
+  title: string;
+  leftAlign?: boolean;
+}
+
+const { title, leftAlign } = Astro.props;
+---
+
+<h1
+  class={`text-5xl font-bold ${leftAlign ? "text-start" : "text-center"} dark:text-white`}
+>
+  {title}
+</h1>

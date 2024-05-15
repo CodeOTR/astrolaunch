@@ -1,0 +1,15 @@
+---
+
+interface Props  {
+  route: string;
+  title: string;
+}
+
+const { route, title } = Astro.props;
+---
+
+<a href={route}>
+  <button class="py-2 px-3 text-lg font-semibold dark:text-white">
+    {title}
+  </button>
+</a>
