@@ -5,7 +5,7 @@ interface Props {
   buttonText?: string;
 }
 
-const { title, description, buttonText = "Learn more &rarr;" } = Astro.props;
+const { title, description, buttonText = "Learn more" } = Astro.props;
 ---
 
 <div class="dark:bg-gray-800 shadow p-6 rounded-lg">
@@ -19,6 +19,6 @@ const { title, description, buttonText = "Learn more &rarr;" } = Astro.props;
   <a
     href="#"
     class="text-blue-500 hover:text-blue-400"
-    >{buttonText}</a
+    >{buttonText} &rarr;</a
   >
 </div>
